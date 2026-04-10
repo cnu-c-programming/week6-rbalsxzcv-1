@@ -5,7 +5,7 @@ int main() {
 
     for (int i=0; i<5; i++) {
         for (int j=0; ; j++) {
-            char c = (unsigned char) *(names+i);
+            char c = (char)*((*(names+i))+j);
             if (c == '\0')
                 break;
             printf("%c", c);
